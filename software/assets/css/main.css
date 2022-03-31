@@ -22,7 +22,8 @@ header {
 }
 
 nav {
-    position: relative;
+    width: 100%;
+    position: fixed;
     z-index: 99;
     background-color: rgba(68, 68, 68, 0.5);
 }
