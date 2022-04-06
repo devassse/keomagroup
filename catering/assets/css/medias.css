@@ -1,0 +1,38 @@
+/* Media Queries */
+
+/* In media Queries 1rem and 1em are ALWAYS equal to 16px */
+/* Use EM in media Queries, 1rem = 1em = 16px */
+@media only screen and (max-width: 64em){ /* Equal to 1024px */
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+    .featured-section {
+        padding: 4.8rem 9.6rem;
+    }
+    .meals-section .grid {
+        gap: 3.8rem;
+    }
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+    .diets .heading-tertiary {
+        font-size: 2.6rem;
+    }
+    .diets .list {
+        gap: 1rem;
+    }
+    .diets .list-item {
+        font-size: 1.4rem;
+    }
+    .meal-title {
+        font-size: 2.8rem;
+    }
+
+    .testimonials-section .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-plan {
+        width: 100%;
+    }
+}

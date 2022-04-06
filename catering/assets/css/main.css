@@ -41,10 +41,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 .logo img {
-  max-width: 15%;
+  max-width: 15rem;
 }
 .main-navigation-list {
   display: flex;
@@ -52,13 +52,20 @@ header {
   align-items: center;
   list-style: none;
 }
+.main-navigation-list li {
+  padding: 1rem;
+}
+
 .main-navigation-list li:last-child {
   background-color: var(--clr-secondary);
-  padding: 1rem;
   border-radius: 2rem;
 }
-.main-navigation-list li:last-child a {
-  color: var(--clr-white);
+
+.main-navigation-link:hover,
+.main-navigation-link:focus,
+.main-navigation-link:active {
+  color: var(--clr-secondary);
+  border-bottom: 3px inset var(--clr-secondary);
 }
 .main-navigation-link {
   text-decoration: none;
@@ -66,15 +73,18 @@ header {
   font-size: 1.6rem;
   font-weight: 500;
   transition: all 0.1s;
+  padding: 1.6rem 0;
 }
-.main-navigation-link:hover {
-  color: var(--clr-secondary);
+.main-navigation-list li:last-child a {
+  color: var(--clr-white);
+  border-bottom: none
 }
 .hero {
   display: grid;
   gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 0 2rem;
 }
 .hero-img {
   max-width: 100%;
@@ -195,31 +205,6 @@ header {
 }
 
 /**************************/
-/*     REUSABLE GRID      */
-/**************************/
-.grid {
-  display: grid;
-  column-gap: 9.6rem;
-  row-gap: 9.6rem;
-}
-.grid:not(:last-child) {
-  margin-bottom: 6rem;
-}
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-/**************************/
 /*      HOW IT WORKS      */
 /**************************/
 .how-works-section {
@@ -278,8 +263,8 @@ header {
 /**************************/
 /*         MEALS      */
 /**************************/
-.meal-section {
-  padding: 9.6rem 0;
+.meals-section {
+  padding: 0 9.6rem;
 }
 .tag {
   display: inline-block;
