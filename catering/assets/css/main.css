@@ -63,8 +63,8 @@ header {
 .main-navigation-link {
   text-decoration: none;
   color: #333;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 500;
   transition: all 0.1s;
 }
 .main-navigation-link:hover {
@@ -574,6 +574,7 @@ header {
 }
 .cta-form input::placeholder{
   font-family: 'Montserrat', sans-serif;
+  opacity: 0.2;
 }
 .cta-form input:focus,
 .cta-form select:focus {
