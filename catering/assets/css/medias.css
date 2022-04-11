@@ -6,6 +6,9 @@
     .heading-primary {
         font-size: 4.4rem;
     }
+    .heading-tertiary {
+        font-size: 2.6rem;
+    }
     .featured-section {
         padding: 4.8rem 9.6rem;
     }
@@ -15,8 +18,8 @@
     .meal-content {
         padding: 2.4rem 3.2rem 3.2rem 3.2rem;
     }
-    .diets .heading-tertiary {
-        font-size: 2.6rem;
+    .step-img-box img {
+        width: 50%;
     }
     .diets .list {
         gap: 1rem;
@@ -28,11 +31,138 @@
         font-size: 2.8rem;
     }
 
+    .testimonials-section {
+        padding: 0.89rem;
+    }
     .testimonials-section .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .pricing-section {
+        padding-bottom: 0;
+    }
+    .pricing-section .grid {
+        column-gap: 3.2rem;
+    }
     .pricing-plan {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width:60em) { /* Equal to 957px */
+    .heading-primary {
+        font-size: 3.8rem;
+    }
+    .heading-tertiary {
+        font-size: 2.2rem;
+    }
+    .btn, .btn:link, .btn:visited {
+        font-size: 1.6rem;
+        padding: 1.2rem 2.4rem;
+    }
+
+    .logos img {
+        height: 2.2rem;
+    }
+
+    .step-img-box img {
+        width: 60%;
+    }
+
+    .footer .grid--footer {
+        grid-template-columns: 30fr 30fr 25fr 15fr;
+    }
+}
+
+@media only screen and (max-width: 49.4em) { /* Equals 789px */
+    .heading-primary {
+        font-size: 3.2rem;
+    }
+    
+    .btn, .btn:link, .btn:visited {
+        font-size: 1.2rem;
+    }
+
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .diets {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .meal-content {
+        padding: 1.8rem;
+    }
+    .meal-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 48em) { /* Equal to 768px */
+    html {
+        font-size: 60%;
+    }
+
+    .logos img {
+        height: 1.8rem;
+    }
+
+    .step-img-box img {
+        width: 70%;
+    }
+
+    .testimonials-section {
+        grid-template-columns: 1fr;
+    }
+    .testimonials-section .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .grid--footer {
+        grid-template-columns: 30fr 30fr 25fr;
+    }
+
+    /* Mobile Navigation */
+    .nav-mobile {
+        display: block;
+    }
+
+    .main-navigation-list {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(100%);
+
+        flex-direction: column;
+        padding-top: 4.8rem;
+        background-color: rgba(255, 255, 255,.98);
+        transition: all 0.5s ease-in-out;
+       
+        /* Hides the Element */
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    .main-navigation-link {
+        font-size: 3rem;
+    }
+    .nav-open .main-navigation-list {
+        opacity: 1;
+        pointer-events: all;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav-open .nav-mobile-icon[name="menu-outline"] {
+        display: none;
+    }
+    .nav-open .nav-mobile-icon[name="close-outline"] {
+        display: block;
     }
 }

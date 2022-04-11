@@ -15,12 +15,16 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* scroll-behavior: smooth; */
 }
 
 body {
   line-height: 1;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 header {
   padding: 9.6rem 0;
@@ -33,9 +37,40 @@ header {
   max-width: 120rem;
   margin: 0 auto;
 }
+
+.nav-mobile {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+.nav-mobile-icon {
+  width: 3.8rem;
+  height: 3.8rem;
+  color: #333;
+}
+
+.nav-mobile-icon[name="close-outline"] {
+  display: none;
+}
+
+/* Stick Navigation */
+.sticky .header{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  position: fixed !important;
+  top: 0;
+  z-index: 9999;
+  transition: all 0.5s;
+}
+.sticky .hero-section {
+  margin-bottom: 8rem;
+}
 .header {
   background-color: rgba(159, 68, 27, 0.12);
   box-shadow: 0 10px 12px rgba(159, 68, 27, 0.12);
+  position: relative;
 }
 .header-main {
   display: flex;
@@ -55,7 +90,6 @@ header {
 .main-navigation-list li {
   padding: 1rem;
 }
-
 .main-navigation-list li:last-child {
   background-color: var(--clr-secondary);
   border-radius: 2rem;
@@ -96,7 +130,7 @@ header {
   color: #45260a;
 }
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 4.8rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
@@ -502,7 +536,6 @@ header {
 /********************************/
 /*     CALL TO ACTION SECTION   */
 /********************************/
-
 .cta-section {
   padding: 9.6rem;
 }
