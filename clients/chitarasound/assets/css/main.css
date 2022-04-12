@@ -239,7 +239,7 @@ a {
 /*     HERO SECTION STYLES       */
 /*********************************/
 .hero-section {
-  padding: 25vh 0 20vh 0;
+  padding: 35vh 0 15vh 0;
   background-color: var(--clr-dark-light);
   background-image: linear-gradient(
       to top,
