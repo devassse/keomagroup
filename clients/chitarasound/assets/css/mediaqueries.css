@@ -2,11 +2,19 @@
     .main-logo img{
         width: 12rem;
     }
+    .hero-img-box img{
+        width: 100%;
+    }
     .site-lang,
     .main-navigation {
         display: none;
     }
+    .nav-mobile,
     .btn-nav-mobile-open {
         display: block;
+    }
+
+    .grid-img-box img{
+        width: 100%;
     }
 }

@@ -1,5 +1,6 @@
 $(document).ready(function(){
     // alert('Works!')
+    //$('.get-stared').removeClass("animate__animated animate__shakeY").addClass("animate__animated animate__pulse infinite" );
 });
 
 function service(evt, serviceName) {
