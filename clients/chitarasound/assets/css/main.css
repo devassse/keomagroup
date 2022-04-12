@@ -88,6 +88,7 @@ a {
   font-style: italic;
   border-bottom: 1px solid var(--clr-primary);
 }
+/* Grids */
 .grid {
   display: grid;
 }
@@ -102,7 +103,6 @@ a {
 }
 .grid--40-60-cols {
   grid-template-columns: 40fr 60fr;
-  align-items: center;
   gap: 4.8rem;
 }
 
@@ -127,6 +127,9 @@ a {
 }
 .grid-img-box img {
   width: 80%;
+}
+.hero-grid {
+  align-items: center;
 }
 .no-gap {
   gap: 0;
