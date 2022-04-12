@@ -44,14 +44,18 @@
                     </nav>
                     <div class="site-lang">
                         <ul>
-                            <li><a href="#"><span>
+                            <li>
+                                <a href="#" title="Idioma"><span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icons language" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
                                   </svg>
-                                </span></a></li>
-                            <li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" class="icons inbox" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                </span></a>
+                            </li>
+                            <li><a href="#" title="Enviar Mensagem">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" class="icons inbox" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                              </svg></span></a></li>
+                              </svg></span></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="nav-mobile">
@@ -69,7 +73,7 @@
         </section>
         <section class="hero-section">
             <div class="wraper">
-                <div class="grid hero-grid--2-cols">
+                <div class="grid grid--40-60-cols">
                     <div class="hero-img-box">
                         <picture>
                             <source srcset="assets/imgs/chitara-logo.png">
@@ -89,13 +93,61 @@
     <main>
         <section class="services-section">
             <div class="wraper">
-                <div class="grid grid--2-cols">
-                    <div style="border: 1px dotted red;"></div>
-                    <div style="border: 1px dotted red;"></div>
+                <div class="grid grid--40-60-cols">
+                    <div>
+                        <div class="tab">
+                            <button class="tablinks active" onmouseover="service(event, 'palco')">Palco & Luz</button>
+                            <button class="tablinks" onmouseover="service(event, 'multimedia')">Multimédia</button>
+                            <button class="tablinks" onmouseover="service(event, 'lead-wall')">Lead Wall</button>
+                            <button class="tablinks" onmouseover="service(event, 'telas')">Telas Interativas</button>
+                            <button class="tablinks" onmouseover="service(event, 'som')">Som</button>
+                          </div>
+                    </div>
+                    <div>
+                        <div id="palco" class="tabcontent active">
+                            <h2 class="heading-secondary">Palco & Luz</h2>
+                            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+                            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="text-description">Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+                            <button class="btn btn-primary">Contratar serviço</button>
+                          </div>
+                    
+                          <div id="multimedia" class="tabcontent">
+                            <h2 class="heading-secondary">Multimédia</h2>
+                            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. A blanditiis culpa incidunt soluta doloremque optio ex. Pariatur, repudiandae. Sed excepturi eos deleniti, facere natus corporis illum autem voluptatum officia ipsam?</p> 
+                            <p class="text-description">Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+                            <button class="btn btn-primary">Contratar serviço</button>
+                        </div>
+                    
+                          <div id="lead-wall" class="tabcontent">
+                            <h2 class="heading-secondary">Lead Wall</h2>
+                            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam delectus pariatur laudantium ea, modi illum similique explicabo dolorum unde cum nulla sequi, dignissimos et. Nostrum ullam quis in adipisci!</p>
+                            <p class="text-description">Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+                            <button class="btn btn-primary">Contratar serviço</button>
+                        </div>
+                    
+                          <div id="telas" class="tabcontent">
+                            <h2 class="heading-secondary">Telas Interativas</h2>
+                            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+                            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="text-description">Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+                            <button class="btn btn-primary">Contratar serviço</button>
+                        </div>
+                    
+                          <div id="som" class="tabcontent">
+                            <h2 class="heading-secondary">Som</h2>
+                            <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam delectus pariatur laudantium ea, modi illum similique explicabo dolorum unde cum nulla sequi, dignissimos et. Nostrum ullam quis in adipisci!</p>
+                            <p class="text-description">Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+                            <button class="btn btn-primary">Contratar serviço</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     
+    <!-- importing scripts -->
+    <script src="assets/js/jquery-1.12.2.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
