@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Chitara Sound - Aluguer de som, produção de eventos, tradução simultanea, conferençias, etc... ">
+    <title>Chitara Sound, Lda</title>
+    <!-- import styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai"/>
+    <link rel="stylesheet" href="assets/css/reset.min.css"/>
+    <link rel="stylesheet prefetch" href="assets/css/application.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <header id="slider" class="section">
+      <div class="wraper">
+        <div>
+          Logo
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Nav 1</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li><a href="#">Nav 3</a></li>
+            <li><a href="#">Nav 4</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="slider">
+        <div class="slider__container">
+          <div class="slider__item slide-burger">
+            <div class="slider__content grid">
+              <div class="column">
+                <h1 class="title">Som <span>&</span></h1>
+                <h1 class="title">Imagem</h1>
+              </div>
+              <div class="column">
+                <img
+                  src="assets/imgs/sound.png"
+                  alt=""
+                  class="image burger"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slider__item slide-astronaut">
+            <div class="slider__content grid">
+              <div class="column">
+                <h1 class="title">Palco <span>&</span></h1>
+                <h1 class="title">Luz</h1>
+              </div>
+              <div class="column">
+                <img
+                  src="assets/imgs/palco-logo.jpg"
+                  alt=""
+                  class="image astronaut"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slider__item slide-coffee">
+            <div class="slider__content grid">
+              <div class="column">
+                <h1 class="title">Lead</h1>
+                <h1 class="title">Wall</h1>
+              </div>
+              <div class="column">
+                <img
+                  src="assets/imgs/multimedia-logo.png"
+                  alt=""
+                  class="image cup"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="wraper">
+          <div class="tab">
+            <button class="tablinks active" onmouseover="service(event, 'palco')">Palco, Luz</button>
+            <button class="tablinks" onmouseover="service(event, 'multimedia')">Multimédia</button>
+            <button class="tablinks" onmouseover="service(event, 'lead-wall')">Lead Wall</button>
+            <button class="tablinks" onmouseover="service(event, 'telas')">Telas Interativas</button>
+            <button class="tablinks" onmouseover="service(event, 'som')">Som</button>
+          </div>
+    
+          <div id="palco" class="tabcontent active">
+            <h3>Palco</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Nulla dolore magnam repellendus, unde impedit excepturi numquam vitae officia modi suscipit accusantium. Repudiandae totam quas reiciendis, dolor quos dignissimos ut quam.</p>
+            <button class="general-btn">Contrar</button>
+          </div>
+    
+          <div id="multimedia" class="tabcontent">
+            <h3>Multimédia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A blanditiis culpa incidunt soluta doloremque optio ex. Pariatur, repudiandae. Sed excepturi eos deleniti, facere natus corporis illum autem voluptatum officia ipsam?</p> 
+          </div>
+    
+          <div id="lead-wall" class="tabcontent">
+            <h3>Lead Wall</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam delectus pariatur laudantium ea, modi illum similique explicabo dolorum unde cum nulla sequi, dignissimos et. Nostrum ullam quis in adipisci!</p>
+          </div>
+    
+          <div id="telas" class="tabcontent">
+            <h3>Telas Interativas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam delectus pariatur laudantium ea, modi illum similique explicabo dolorum unde cum nulla sequi, dignissimos et. Nostrum ullam quis in adipisci!</p>
+          </div>
+    
+          <div id="som" class="tabcontent">
+            <h3>Som</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam delectus pariatur laudantium ea, modi illum similique explicabo dolorum unde cum nulla sequi, dignissimos et. Nostrum ullam quis in adipisci!</p>
+          </div>
+    
+          <div class="clearfix"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wraper">
+          <div class="grid grid--3-cols">
+            <div class="about"></div>
+            <div class="about"></div>
+            <div class="about"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/tweenmax.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+  </body>
+</html>
