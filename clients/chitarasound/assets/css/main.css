@@ -183,3 +183,11 @@ a {
 .hero-img-box img {
     width: 60%;
 }
+
+
+/*********************************/
+/*    SERVICES SECTION STYLES    */
+/*********************************/
+.services-section {
+    padding: 9.6rem;
+}
