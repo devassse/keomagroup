@@ -1,0 +1,12 @@
+@media only screen and (max-width: 60em){ /* Equals 960px */
+    .main-logo img{
+        width: 12rem;
+    }
+    .site-lang,
+    .main-navigation {
+        display: none;
+    }
+    .btn-nav-mobile-open {
+        display: block;
+    }
+}
