@@ -286,6 +286,12 @@ a {
   margin-top: 10%;
 }
 
+.get-stared span{
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
 /*********************************/
 /*     HERO SECTION STYLES       */
 /*********************************/
