@@ -366,6 +366,49 @@ a {
 }
 
 /*********************************/
+/*    EQUIPMENT SECTION STYLES   */
+/*********************************/
+.equipment-section {
+  padding: 6.8rem 0;
+}
+.equipment-sectionn h3 {
+  text-align: center;
+  color: var(--clr-white);
+  padding: 1.2rem;
+  background-color: var(--clr-primary);
+}
+.equipments{
+  padding: 6.8rem 0;
+}
+.equipment {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid var(--clr-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.equipment img{
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 50s;
+}
+.equipment img:hover {
+  transform: scale(30);
+}
+.equipment-name {
+  font-size: 4rem;
+  position: absolute;
+  color: var(--clr-white);
+}
+.equipment-name:hover{
+  text-shadow: 1px 1px 1px var(--clr-dark-0-6);
+  cursor: pointer;
+}
+
+/*********************************/
 /*      VALUES SECTION STYLES    */
 /*********************************/
 .section-values {
