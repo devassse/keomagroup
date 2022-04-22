@@ -1,4 +1,4 @@
-@media only screen and (max-width: 60em){ /* Equals 960px */
+@media only screen and (max-width: 60em){ /* Equals 960px - Tabletes */
     .main-logo img{
         width: 12rem;
     }
@@ -17,4 +17,42 @@
     .grid-img-box img{
         width: 100%;
     }
+    .secondary-navigation ul {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 35em) { /* Equals 560px - Mobiles */
+    .grid--40-60-cols {
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+    }
+    .hero-img-box {
+        text-align: center;
+      }
+    .hero-img-box img {
+        width: 50%;
+    }
+    .hero-description-box {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .wraper {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--25-30-45 {
+        grid-template-columns: 1fr;
+    }
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-img-box img {
+        width: 50%;
+      }
 }

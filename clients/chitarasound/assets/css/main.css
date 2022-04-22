@@ -550,10 +550,15 @@ footer {
 .secondary-navigation ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
     gap: 2.4rem;
 }
 
 .secondary-navigation a:hover {
     color: var(--clr-primary);
+}
+.copyrights {
+  margin-top: 2.4rem;
+  text-align: center;
 }
