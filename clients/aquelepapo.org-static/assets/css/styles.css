@@ -1,0 +1,990 @@
+@font-face {
+    font-family: k2d-regular;
+    src: url(../fonts/K2D-Regular.ttf);
+}
+
+@font-face {
+    font-family: k2d-bold;
+    src: url(../fonts/K2D-Bold.ttf);
+}
+
+body {
+    font-family: k2d-regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: k2d-regular;
+}
+
+.ap-plus-icon{
+    cursor: pointer;
+}
+
+/*--------------------*
+*   MAIN NAVIGATION
+----------------------*/
+#menu nav {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+#menu nav a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-mobile-index{
+    background-color: rgba(3, 3, 189, 0);
+}
+.nav-mobile{
+    background-color: #2804c0;
+}
+.nav-mobile-index .navbar-brand img{
+    width: 20%;
+    position: absolute;
+}
+.nav-mobile .navbar-brand img{
+    width: 150px;
+}
+.nav-mobile .navbar-brand{
+    position: absolute;
+    top: 1rem;
+}
+.navbar-page-name{
+    display: none;
+}
+
+.search-menu {
+    padding: 0rem 0.4rem 0.2rem 0.4rem !important;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border-radius: 100%;
+    border: 1px dotted #2804c0;
+    color: #2804c0 !important;
+}
+#social-mobile{
+    display: none;
+}
+
+/*--------------------*
+*   SOCIAL ASIDE
+----------------------*/
+#social-aside {
+    padding: 0 0.5rem;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 40%;
+    background: #2804c0;
+}
+
+#social-aside .social {
+    padding: 0.2rem 0.4rem 0.15rem 0.4rem;
+    margin: 0.8rem 0;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+#social-aside em{
+    font-size: 1rem; color:#2804c0;
+}
+
+/*--------------------*
+*   HOME CONTENT
+----------------------*/
+
+#home-container {
+    padding: auto;
+}
+
+#home-container .figure {
+    width: 90%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+#home-container .figure img {
+    width: 100%;
+    padding-bottom: 5px;
+    background:
+        linear-gradient(to left,
+            rgba(92, 7, 52, 1) 0%,
+            rgba(134, 29, 84, 1) 12%,
+            rgba(255, 93, 177, 1) 47%,
+            rgba(83, 0, 30, 1) 100%) left bottom rgb(255, 255, 255) no-repeat;
+    background-size: 100% 0px;
+}
+
+#home-container .figure .figure-caption {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 2%;
+    margin-top: -30%;
+    text-align: left;
+}
+
+@media (max-width:1199px){
+    #home-container .figure .figure-caption {
+        margin-top: -29%;
+    }
+}
+
+@media (min-width:993px){
+    #slider .d-none{
+        margin-bottom: -2.5rem;
+    }
+}
+
+#home-container .figure .figure-caption h2 {
+    font-weight: bold;
+    color: #2804c0;
+}
+
+#slider .d-none{
+    line-height: 12px;
+}
+#slider h5{
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+#slider p{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+#slider img{
+    width: 100%;
+}
+
+
+
+/*--------------------*
+*   PARTNERS SECTION
+----------------------*/
+#partners {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#partners h2 {
+    font-weight: bold !important;
+    color: #2804c0;
+    font-size: 2rem !important;
+}
+
+#partners .figure img {
+    width: 80%;
+}
+
+
+.header-separator {
+    height: 76px;
+}
+
+.page-header-name{
+    display: none;
+}
+
+/*--------------------*
+*   ABOUT PAGE
+----------------------*/
+#about-page{
+    margin-top: 5rem;
+}
+#about-page .figure {
+    margin-bottom: -75px;
+}
+
+#about-page .figure img {
+    width: 55%;
+    margin-left: 25%;
+}
+
+#about-page .description {
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 15% 5% 5% 5%;
+    margin: 0 auto;
+    background-color: #2353ff1f;
+    background:
+        linear-gradient(to left,
+            rgba(92, 7, 52, 1) 0%,
+            rgba(134, 29, 84, 1) 12%,
+            rgba(255, 93, 177, 1) 47%,
+            rgba(83, 0, 30, 1) 100%) left bottom #2353ff1f no-repeat;
+    background-size: 100% 5px;
+}
+
+
+/*--------------------*
+*   PERSONAGENS PAGE
+----------------------*/
+#personagens-page {
+    margin-top: 3rem;
+}
+#personagens-page .figure {
+    margin-bottom: -60px;
+    margin-left: 15%;
+}
+.personagem{
+    margin-top: 3rem;
+}
+#personagens-page .description {
+    /* min-height: 200px; */
+    padding: 15% 5% 5% 5%;
+    margin: 0 auto;
+    border-top: 4px solid rgba(92, 7, 52, 1);
+    background-color: #2353ff1f;
+    background:
+        linear-gradient(to left,
+            rgba(92, 7, 52, 1) 0%,
+            rgba(134, 29, 84, 1) 12%,
+            rgba(255, 93, 177, 1) 47%,
+            rgba(83, 0, 30, 1) 100%) left bottom #2353ff1f no-repeat;
+    background-size: 100% 5px;
+    transition: max-height 0.15s ease-out;
+}
+
+.show-more {
+    margin-right: -5.5%;
+    margin-bottom: -6%;
+}
+
+#personagens-page .description h4 {
+    text-transform: uppercase;
+    color: #2804c0;
+    font-weight: bold;   
+}
+#personagens-page .description p{
+    margin-bottom: 0rem !important;
+}
+
+
+/*--------------------*
+*   EPISODES PAGE
+----------------------*/
+
+#episodes-page {
+    margin-top: 0rem;
+}
+.episode {
+    width: 90%;
+    margin-top: 5rem;
+    text-align: center;
+}
+iframe{
+    height: 13em;
+}
+.episode-player{
+    width: 50%;
+    position: relative; 
+    background-color: #2353ff1f;
+    top: -5rem;
+    padding: 1rem;
+    border-radius: 50px;
+    color: rgba(83, 0, 30, 1);
+    font-size: 2rem;
+}
+.episode .card-body {
+    border-top: 3px solid rgb(143, 0, 24);
+    background-color: #2353ff1f;
+    background:
+        linear-gradient(to left,
+            rgba(92, 7, 52, 1) 0%,
+            rgba(134, 29, 84, 1) 12%,
+            rgba(255, 93, 177, 1) 47%,
+            rgba(83, 0, 30, 1) 100%) left bottom #2353ff1f no-repeat;
+    background-size: 100% 5px;
+}
+.episode a {
+    width: 40%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    border-style: solid;
+    border-width: 2px;
+    color: #2804c0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: k2d-bold;
+    border-image: linear-gradient(45deg, rgb(143, 0, 24), rgb(250, 109, 66)) 1;
+}
+
+.episode h5{
+    color: #2804c0;
+    font-family: k2d-bold;
+}
+.episode h5,
+p {
+    text-align: left;
+}
+
+
+/*--------------------*
+*   EVENTS PAGE
+----------------------*/
+
+#events-page {
+    margin-top: 3rem;
+}
+
+#events-page h2{
+    text-align: center;
+    color: #2804c0;
+}
+
+.event{
+    margin-top: 3rem;
+    text-align: center;
+}
+.event .card{
+    background-color:#fe8102;
+}
+.event .card-text{
+    padding: 2rem 0;
+}
+.event .card h5{
+    padding: 1.3rem 0;
+}
+
+.event .card h5 span{
+    font-size: 1rem;
+    color: #d3d3d3;
+}
+
+.event .card p{
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+
+.event .btn {
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    font-size: 1rem;
+    border-image: linear-gradient(45deg, rgb(143, 0, 24), rgb(250, 109, 66)) 1;
+}
+.event-content h4{
+    color: #2804c0;
+    margin-top: 1rem;
+}
+.event-content h6{
+    color: rgb(240 35 206);
+    font-weight: bold;
+    margin-top: 4px;
+    font-size: 12px;
+}
+.event-content hr{
+    height: 2px !important;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgba(92,7,52,1) 0%,
+      rgba(134,29,84,1) 12%,
+      rgba(255,93,177,1) 47%,
+      rgba(255, 18, 207, 1) 100%
+    )
+    left 
+    bottom
+    #2353ff1f    
+    no-repeat; 
+}
+.event-row{
+    margin-bottom: 3px;
+}
+.event-date{
+    border-right: 2px solid #999; 
+    color: rgb(240 35 206);
+    font-weight: bold;
+}
+
+/*--------------------*
+*   DOUBTS PAGE
+----------------------*/
+
+#doubts-page {
+    margin-top: 0rem;
+}
+
+#doubts-page h5{
+    margin-bottom: -1rem !important;
+}
+
+.doubt {
+    width: 90%;
+    margin-top: 5rem;
+}
+
+.doubt {
+    min-height: 100px;
+    border-top: 4px solid rgba(92, 7, 52, 1);
+    background-color: #2353ff1f;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgba(92,7,52,1) 0%,
+      rgba(134,29,84,1) 12%,
+      rgba(255,93,177,1) 47%,
+      rgba(255, 18, 207, 1) 100%
+    )
+    left 
+    bottom
+    #2353ff1f    
+    no-repeat; 
+  background-size:100% 5px ;
+}
+.doubt .doubt-body{
+    padding:1.5rem 1rem;
+}
+.doubt .doubt-title{
+    font-weight: 900;
+}
+.doubt .card-body h5{
+    font-size: 1.6rem;
+    font-family: k2d-bold;
+}
+
+.ap-plus-icon {
+    color: rgba(255, 18, 207, 1);
+    font-size: 28px;
+}
+
+/* Card body padding */
+
+/*--------------------*
+*   HELP PAGE
+----------------------*/
+
+#help-page {
+    margin-top: 0rem;
+}
+#help-page h5{
+    margin-bottom: -1rem !important;
+}
+.help .modal-dialog h3{
+    color: rgb(143, 10, 0);
+}
+.help .modal-dialog h6{
+    color: #2804c0;
+}
+
+.help .modal-dialog a{
+    text-decoration: none;
+    color: rgb(143, 10, 0);
+}
+.help {
+    width: 90%;
+    margin-top: 5rem;
+}
+
+.help{
+    min-height: 100px;
+    border-top: 4px solid rgba(92, 7, 52, 1);
+    background-color: #2353ff1f;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgba(92,7,52,1) 0%,
+      rgba(134,29,84,1) 12%,
+      rgba(255,93,177,1) 47%,
+      rgba(83,0,30,1) 100%
+    )
+    left 
+    bottom
+    #2353ff1f    
+    no-repeat; 
+  background-size:100% 5px ;
+}
+.help-body {
+    padding:1.5rem 1rem; 
+}
+.help .help-body h5{
+    font-size: 1.6rem;
+    font-family: 'k2d-bold';
+}
+.help .help-body{
+    padding: 1.5rem 1rem;
+}
+
+.help-mobile-h{
+    text-align: center;
+    color: #2804c0;
+    padding-top: 2rem;
+    display: none;
+}
+.help-mobile-h h2{
+    font-family: k2d-bold;
+    line-height: 1px;
+}
+
+/* Help Tabs */
+.tabs-holder{
+    padding: 5% 0;
+}
+.tab-button{
+    margin: 2%;
+    border: 1px solid #2804c0;
+}
+.tab-button:hover,
+.tab-button:active,
+.tab-button:focus{
+    background-color: #2804c0;
+}
+.tab-button:hover > a{
+    color: #ffffff;
+}
+.tab-conteiner{
+    min-height: 100px;
+    border-top: 4px solid rgba(92, 7, 52, 1);
+    background-color: #2353ff1f;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgba(92,7,52,1) 0%,
+      rgba(134,29,84,1) 12%,
+      rgba(255,93,177,1) 47%,
+      rgba(255, 18, 207, 1) 100%
+    )
+    left 
+    bottom
+    #2353ff1f    
+    no-repeat; 
+  background-size:100% 5px;
+  padding: 2%;
+  margin: 0 2%;
+}
+.tab-conteiner h3{
+    color: #2804c0;
+}
+
+.tab-conteiner hr{
+    height: 2px !important;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgba(92,7,52,1) 0%,
+      rgba(134,29,84,1) 12%,
+      rgba(255,93,177,1) 47%,
+      rgba(255, 18, 207, 1) 100%
+    )
+    left 
+    bottom
+    #2353ff1f    
+    no-repeat; 
+}
+.tab-conteiner a{
+    color: rgba(255, 18, 207, 1);
+    text-decoration: none;
+}
+
+/*--------------------*
+*   CONTACTS PAGE
+----------------------*/
+
+#contacts-page {
+    margin-top: 5rem;
+}
+
+#contacts-page .form-wraper {
+    max-width: 90%;
+    color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-style: solid;
+    border-image: linear-gradient(45deg, rgb(143, 10, 0), rgb(250, 140, 66)) 1;
+}
+
+#contacts-page form input,
+#contacts-page form textarea {
+    background-color: transparent;
+    padding: 1rem;
+}
+
+#contacts-page form input::placeholder,
+#contacts-page form textarea::placeholder {
+    color: #2804c0;
+    font-size: 1.2rem;
+}
+
+#contacts-page form div {
+    display: block;
+    border: solid 1px #CCC;
+    border-bottom: none;
+    position: relative;
+}
+
+#contacts-page form div:after {
+    content: "";
+    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#contacts-page form button {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: solid;
+    border-width: 2px;
+    color: #2804c0;
+    font-size: 1.2rem;
+    border-image: linear-gradient(45deg, rgb(143, 0, 24), rgb(250, 109, 66)) 1;
+}
+
+#contacts-page form {
+    margin-left: -3px;
+    margin-right: -3px;
+    padding: 1rem;
+    background-color: #cccccc;
+}
+
+#contacts-page .form-control {
+    display: block;
+    border: solid 1px #CCC;
+    border-bottom: none;
+    position: relative;
+}
+
+#contacts-page .form-control:after {
+    content: "";
+    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+    display: block;
+    height: 10px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+}
+
+.contacts-options .figure img {
+    width: 80%;
+    text-align: right;
+}
+
+.contacts-options h4 {
+    padding-top: 0.8rem;
+    font-family: k2d-bold;
+    font-size: 1.3rem;
+    color: #2804c0;
+}
+
+.contacts-options p {
+    margin-top: -8px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+.contacts-options a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+@media (max-width:992px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .navbar-light .navbar-toggler{
+        border-color: transparent !important;
+    }
+    .nav-mobile-index .navbar-brand img{
+        width: 17%;
+        margin-top: -12px;
+    }
+    .nav-mobile .navbar-brand img{
+        width: 60px;
+    }
+
+    .header-separator {
+        height: 50px;
+    }
+    #home-container .figure{
+        width: 100%;
+    }
+    #home-container .figure .figure-caption {
+        margin-top: -33%;
+    }
+    #home-container .figure .figure-caption h2 {
+        font-size: 1.5rem;
+    }
+
+    .subheader-banner{
+        visibility: hidden;
+    }
+    .nav-mobile .navbar-brand{
+        position: static;
+    }
+    .navbar-page-name{
+        display: inline-block;
+        top: 27px;
+        margin-left: 11px;
+        position: absolute;
+    }
+
+    #slider .d-none{
+        margin-bottom: -3rem;
+        line-height: 12px;
+        display: block !important;
+    }
+    #slider h5{
+        font-size: 0.8rem;
+        line-height: 1rem !important;
+    }
+    #slider p{
+        font-size: 0.6rem;
+        margin-top:-7px;
+        line-height: 0.5rem !important;
+    }
+
+    #about-page{
+        margin-top: 2rem;
+    }
+    #about-page .figure {
+        margin-bottom: -50px;
+    }
+    #about-page .figure img {
+        width: 70%;
+        margin-left: 15%;
+    }
+    #about-page .description {
+        padding: 20% 5% 5% 5%;
+    }
+
+    #social-aside{
+        display: none;
+    }
+
+    #social-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #social-mobile .social {
+        padding: 0.2rem 0.4rem 0.15rem 0.4rem;
+        margin: 0.8rem 0;
+        background-color: #ffffff;
+        border-radius: 100%;
+        margin: 3rem 1rem;
+    }
+    #social-mobile a{
+        padding: 0.2rem 0.4rem 0.15rem 0.4rem !important;
+    }
+    #social-mobile em{
+        font-size: 1rem; color:#2804c0;
+    }
+    .help-mobile-h{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-on-mobile{
+        display: none !important;
+    }
+    
+    #main-container .figure img {
+        width: 100%;
+    }
+    #slider img{
+        width: 215%;
+        margin-left: -56%;
+    }
+
+    #about-page .figure{
+        margin-top: 3rem;
+    }
+
+    #about-page .figure img {
+        width: 70%;
+    }
+    .episode,
+    .help,
+    .doubt{
+        width: 100%;
+    }
+    #contacts-page .form-wraper{
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+
+}
+@media (max-width:575px) {
+    
+}
+
+@media (max-width:425px) {
+    .navbar-nav{
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .customer-logos{
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+}
+
+@media (max-width:320px) {
+    
+    #home-container .figure .figure-caption {
+        margin-top: -35%;
+    }
+    #home-container .figure .figure-caption h2 {
+        font-size: 1.3rem;
+    }
+    #home-container .figure .figure-caption h5 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Slider */
+.slick-slide {
+    margin: 3rem 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    width: 95%;
+    left: 2.5%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-slider button{
+    color: #2804c0;
+    border: 1px solid #2804c0;
+    border-radius: 50%;
+    padding: 10px;
+}
