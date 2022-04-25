@@ -359,12 +359,19 @@ a {
 }
 
 /*********************************/
-/*    SERVICES SECTION STYLES    */
+/*    ABOUT SECTION STYLES    */
 /*********************************/
 .about-section {
   padding: 6.8rem 0;
 }
-
+.about-img-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.about-img-boxes .grid-img-box img{
+  border: 3px solid var(--clr-dark-0-6);
+}
 /*********************************/
 /*    EQUIPMENT SECTION STYLES   */
 /*********************************/
