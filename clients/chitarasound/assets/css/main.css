@@ -414,6 +414,12 @@ a {
   text-shadow: 1px 1px 1px var(--clr-dark-0-6);
   cursor: pointer;
 }
+.equipment-details img{
+  border-radius: 0;
+}
+.equipment-details img:hover{
+  transform: none;
+}
 
 /*********************************/
 /*      VALUES SECTION STYLES    */
@@ -617,7 +623,8 @@ footer {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: var(--clr-black);
+  margin-right: 0.8rem;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -637,7 +644,7 @@ footer {
 }
 
 .modal-body {
-  padding: 1.2rem;
+  padding: 6.8rem;
   font-size: 1.6rem;
   line-height: 1.6;
 }
