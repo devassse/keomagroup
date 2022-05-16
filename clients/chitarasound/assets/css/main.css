@@ -432,11 +432,16 @@ a {
   background-color: var(--clr-primary);
   padding: 1.2rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   color: var(--clr-white);
 }
 .value p {
   width: 80%;
+}
+.value a {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 .value-contact {
   text-align: center;
