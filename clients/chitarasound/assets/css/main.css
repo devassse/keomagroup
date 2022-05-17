@@ -73,6 +73,9 @@ a {
   line-height: 1.6;
   margin-bottom: 0.8rem;
 }
+.autoWrite-p{
+  font-size: 2rem;
+}
 .btn {
   border: transparent;
   background: none;
@@ -306,6 +309,7 @@ a {
     url("../imgs/hero-section.jpg");
   background-size: cover;
   color: var(--clr-white);
+  min-height: 95vh;
 }
 .hero-img-box {
   text-align: right;
@@ -326,6 +330,7 @@ a {
   margin: 3% 0;
   padding: 2%;
   font-size: 1.2rem;
+  transition: all .7s ease;
 }
 
 .tab button {
@@ -432,16 +437,11 @@ a {
   background-color: var(--clr-primary);
   padding: 1.2rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: var(--clr-white);
 }
 .value p {
   width: 80%;
-}
-.value a {
-  font-size: 1.6rem;
-  font-weight: bold;
 }
 .value-contact {
   text-align: center;

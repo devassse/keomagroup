@@ -23,7 +23,11 @@ var btn = document.getElementById("palcoBtn");
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
+var span = document.getElementsByClassName("close")[0].addEventListener('click', () =>{
+  modal.style.display = "none";
+  // multimediaModal.style.display = "none";
+  console.log("Clicked")
+})
 
 var multimediaModal = document.getElementById("multimediaModal");
 var multimediaBtn = document.getElementById("multimediaBtn");
@@ -43,20 +47,50 @@ telasBtn.onclick = function() {
   telasModal.style.display = "block";
 }
 
+var somModal = document.getElementById("somModal");
+var somBtn = document.getElementById("somBtn");
+somBtn.onclick = function() {
+  somModal.style.display = "block";
+}
 
-var span = document.getElementsByClassName("close")[0];
+var mesasModal = document.getElementById("mesasModal");
+var mesasBtn = document.getElementById("mesasBtn");
+mesasBtn.onclick = function() {
+  mesasModal.style.display = "block";
+}
+
+var colunasModal = document.getElementById("colunasModal");
+var colunasBtn = document.getElementById("colunasBtn");
+colunasBtn.onclick = function() {
+  colunasModal.style.display = "block";
+}
+
+var fogosModal = document.getElementById("fogosModal");
+var fogosBtn = document.getElementById("fogosBtn");
+fogosBtn.onclick = function() {
+  fogosModal.style.display = "block";
+}
+
+
 window.onclick = function(event) {
   if (event.target == multimediaModal || 
     event.target == modal || 
     event.target == leadwallModal || 
-    event.target == telasModal) {
+    event.target == telasModal ||
+    event.target == somModal ||
+    event.target == mesasModal ||
+    event.target == colunasModal ||
+    event.target == fogosModal) {
         modal.style.display = "none";
         multimediaModal.style.display = "none";
         leadwallModal.style.display = "none";
+        telasModal.style.display = "none";
+        somModal.style.display = "none";
+        mesasModal.style.display = "none";
+        colunasModal.style.display = "none";
+        fogosModal.style.display = "none";
   }
 }
-span.onclick = function() {
-  modal.style.display = "none";
-  multimediaModal.style.display = "none";
-}
+
+
 

@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/mediaqueries.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/added_css.css">
 </head>
 <body>
 
@@ -87,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="hero-section">
+        <section class="hero-section" >
             <div class="wraper">
                 <div class="grid grid--40-60-cols hero-grid">
                     <div class="hero-img-box">
@@ -97,12 +98,11 @@
                         <img src="assets/imgs/chitara-logo.png" alt="Chitara Logo" srcset="">
                     </div>
                     <div class="hero-description-box">
-                        <h1 class="heading-primary">A Chitara Sound, Lda</h1>
-                        <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deserunt sint doloremque saepe nemo corporis quam inventore eligendi numquam aliquid optio facere doloribus dolores odit sit, reprehenderit quod maxime animi?</p>
+                        <h1 class="heading-primary"><span class="autoWrite-h1"></span></h1>
+                        <p class="text-description"><span class="autoWrite-p"></span></p>
                         <button class="btn btn-primary">Contrata-nos</button>
                     </div>
                 </div>
-            </div>
             <div class="get-stared animate__animated animate__shakeY animate__slow animate__infinite infinite">
                 <a href="#services" class=""><svg xmlns="http://www.w3.org/2000/svg" class="icons" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
@@ -113,7 +113,7 @@
     </header>
 
     <main>
-        <section class="services-section" id="services">
+        <section class="services-section reveal" id="services">
             <div class="wraper">
                 <div class="grid grid--40-60-cols">
                     <div>
@@ -167,7 +167,7 @@
             </div>
         </section>
 
-        <section class="equipment-section">
+        <section class="equipment-section reveal">
             <div class="wraper">
                 <h3 class="heading-terteary">
                     Equipamentos
@@ -192,12 +192,18 @@
                                             <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea.</p>
                                         </div>
                                         <div class="about-img-boxes equipment-details">
-                                            <div class="grid-img-box">
+                                            <div class="card">
+                                                <div class="card_part card_part-one"></div>
+                                                <div class="card_part card_part-two"></div>
+                                                <div class="card_part card_part-three"></div>
+                                                <div class="card_part card_part-four"></div>
+                                              </div>
+                                            <!-- <div class="grid-img-box">
                                                 <picture>
                                                     <source src="" type="">
                                                 </picture>
                                                 <img src="assets/imgs/portfolio/dummy.jpg" alt="">
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -227,11 +233,19 @@
                                         </div>
                                         <div class="about-img-boxes equipment-details">
                                             <div class="grid-img-box">
+                                                <div class="card">
+                                                    <div class="card_part card_part-one"></div>
+                                                    <div class="card_part card_part-two"></div>
+                                                    <div class="card_part card_part-three"></div>
+                                                    <div class="card_part card_part-four"></div>
+                                                  </div>
+                                            </div>
+                                            <!-- <div class="grid-img-box">
                                                 <picture>
                                                     <source src="" type="">
                                                 </picture>
                                                 <img src="assets/imgs/portfolio/dummy.jpg" alt="">
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -261,10 +275,12 @@
                                         </div>
                                         <div class="about-img-boxes equipment-details">
                                             <div class="grid-img-box">
-                                                <picture>
-                                                    <source src="" type="">
-                                                </picture>
-                                                <img src="assets/imgs/portfolio/dummy.jpg" alt="">
+                                                <div class="card">
+                                                    <div class="card_part card_part-one"></div>
+                                                    <div class="card_part card_part-two"></div>
+                                                    <div class="card_part card_part-three"></div>
+                                                    <div class="card_part card_part-four"></div>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -295,11 +311,19 @@
                                         </div>
                                         <div class="about-img-boxes equipment-details">
                                             <div class="grid-img-box">
+                                                <div class="card">
+                                                    <div class="card_part card_part-one"></div>
+                                                    <div class="card_part card_part-two"></div>
+                                                    <div class="card_part card_part-three"></div>
+                                                    <div class="card_part card_part-four"></div>
+                                                  </div>
+                                            </div>
+                                            <!-- <div class="grid-img-box">
                                                 <picture>
                                                     <source src="" type="">
                                                 </picture>
                                                 <img src="assets/imgs/portfolio/dummy.jpg" alt="">
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -310,12 +334,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="equipment">
+                    <div class="equipment" id="somBtn">
                         <img src="assets/imgs/equipment.jpg" alt="Equipamento">
                         <span class="equipment-name">Som</span>
 
                         <!-- The Modal -->
-                        <div id="palcoModal" class="modal">
+                        <div id="somModal" class="modal">
                             <!-- Modal content -->
                             <div class="modal-content">
                             <div class="modal-header">
@@ -332,11 +356,19 @@
                                         </div>
                                         <div class="about-img-boxes">
                                             <div class="grid-img-box">
+                                                <div class="card">
+                                                    <div class="card_part card_part-one"></div>
+                                                    <div class="card_part card_part-two"></div>
+                                                    <div class="card_part card_part-three"></div>
+                                                    <div class="card_part card_part-four"></div>
+                                                  </div>
+                                            </div>
+                                            <!-- <div class="grid-img-box">
                                                 <picture>
                                                     <source src="" type="">
                                                 </picture>
                                                 <img src="assets/imgs/portfolio/dummy.jpg" alt="">
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -347,17 +379,137 @@
                             </div>
                         </div>
                     </div>
-                    <div class="equipment">
+                    <div class="equipment" id="mesasBtn">
                         <img src="assets/imgs/equipment.jpg" alt="Equipamento">
-                        <span class="equipment-name">Palco & Luz</span>
+                        <span class="equipment-name">Mesas</span>
+                                               <!-- The Modal -->
+                        <div id="mesasModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h4 class="heading-fouth">Mesas</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="wraper">
+                                    <div class="grid grid--2-cols">
+                                        <div class="about-description">
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea. Dignissimos deleniti dicta non adipisci qui ex, consequuntur velit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto velit, sed voluptas reprehenderit esse corporis quia error provident ratione iste a explicabo illum quaerat. Voluptatum fuga et molestias nisi.</p>
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea.</p>
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea. Dignissimos deleniti dicta non adipisci qui ex, consequuntur velit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto velit, sed voluptas reprehenderit esse corporis quia error provident ratione iste a explicabo illum quaerat. Voluptatum fuga et molestias nisi.</p>
+                                        </div>
+                                        <div class="about-img-boxes">
+                                            <div class="grid-img-box">
+                                                <div class="card">
+                                                    <div class="card_part card_part-one"></div>
+                                                    <div class="card_part card_part-two"></div>
+                                                    <div class="card_part card_part-three"></div>
+                                                    <div class="card_part card_part-four"></div>
+                                                  </div>
+                                            </div>
+                                            <!-- <div class="grid-img-box">
+                                                <picture>
+                                                    <source src="" type="">
+                                                </picture>
+                                                <img src="assets/imgs/portfolio/dummy.jpg" alt="">
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <h3>Modal Footer</h3>
+                            </div> -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="equipment">
+                    <div class="equipment" id="colunasBtn">
                         <img src="assets/imgs/equipment.jpg" alt="Equipamento">
-                        <span class="equipment-name">Multimédia</span>
+                        <span class="equipment-name">Colunas</span>
+                                               <!-- The Modal -->
+                        <div id="colunasModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h4 class="heading-fouth">Colunas</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="wraper">
+                                    <div class="grid grid--2-cols">
+                                        <div class="about-description">
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea. Dignissimos deleniti dicta non adipisci qui ex, consequuntur velit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto velit, sed voluptas reprehenderit esse corporis quia error provident ratione iste a explicabo illum quaerat. Voluptatum fuga et molestias nisi.</p>
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea.</p>
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea. Dignissimos deleniti dicta non adipisci qui ex, consequuntur velit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto velit, sed voluptas reprehenderit esse corporis quia error provident ratione iste a explicabo illum quaerat. Voluptatum fuga et molestias nisi.</p>
+                                        </div>
+                                        <div class="about-img-boxes">
+                                            <div class="grid-img-box">
+                                                <div class="card">
+                                                    <div class="card_part card_part-one"></div>
+                                                    <div class="card_part card_part-two"></div>
+                                                    <div class="card_part card_part-three"></div>
+                                                    <div class="card_part card_part-four"></div>
+                                                  </div>
+                                            </div>
+                                            <!-- <div class="grid-img-box">
+                                                <picture>
+                                                    <source src="" type="">
+                                                </picture>
+                                                <img src="assets/imgs/portfolio/dummy.jpg" alt="">
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <h3>Modal Footer</h3>
+                            </div> -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="equipment">
+                    <div class="equipment" id="fogosBtn">
                         <img src="assets/imgs/equipment.jpg" alt="Equipamento">
-                        <span class="equipment-name">Lead Wall</span>
+                        <span class="equipment-name">Fogos</span>
+                                               <!-- The Modal -->
+                        <div id="fogosModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h4 class="heading-fouth">Fogos</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="wraper">
+                                    <div class="grid grid--2-cols">
+                                        <div class="about-description">
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea. Dignissimos deleniti dicta non adipisci qui ex, consequuntur velit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto velit, sed voluptas reprehenderit esse corporis quia error provident ratione iste a explicabo illum quaerat. Voluptatum fuga et molestias nisi.</p>
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea.</p>
+                                            <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea. Dignissimos deleniti dicta non adipisci qui ex, consequuntur velit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto velit, sed voluptas reprehenderit esse corporis quia error provident ratione iste a explicabo illum quaerat. Voluptatum fuga et molestias nisi.</p>
+                                        </div>
+                                        <div class="about-img-boxes">
+                                            <div class="grid-img-box">
+                                                <div class="card">
+                                                    <div class="card_part card_part-one"></div>
+                                                    <div class="card_part card_part-two"></div>
+                                                    <div class="card_part card_part-three"></div>
+                                                    <div class="card_part card_part-four"></div>
+                                                  </div>
+                                            </div>
+                                            <!-- <div class="grid-img-box">
+                                                <picture>
+                                                    <source src="" type="">
+                                                </picture>
+                                                <img src="assets/imgs/portfolio/dummy.jpg" alt="">
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <h3>Modal Footer</h3>
+                            </div> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -436,7 +588,7 @@
             </div>
         </section> -->
 
-        <section class="section-values" id="about">
+        <section class="section-values reveal" id="about">
             <div class="wraper">
                 <div class="grid grid--2-cols">
                     <div class="about-description">
@@ -446,7 +598,21 @@
                         <p class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias voluptatibus illo obcaecati dolores facilis dolore quidem iure sed deleniti ea. Dignissimos deleniti dicta non adipisci qui ex, consequuntur velit! Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto velit, sed voluptas reprehenderit esse corporis quia error provident ratione iste a explicabo illum quaerat. Voluptatum fuga et molestias nisi.</p>
                     </div>
                     <div class="about-img-boxes">
-                        <div class="grid-img-box">
+                        <div class="card">
+                            <div class="card">
+                                <div class="about_part about_part-one"></div>
+                                <div class="about_part about_part-two"></div>
+                                <div class="about_part about_part-three"></div>
+                                <div class="about_part about_part-four"></div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="about_part about_part-one"></div>
+                                <div class="about_part about_part-two"></div>
+                                <div class="about_part about_part-three"></div>
+                                <div class="about_part about_part-four"></div>
+                            </div>
+                        <!-- <div class="grid-img-box">
                             <picture>
                                 <source src="" type="">
                             </picture>
@@ -457,46 +623,31 @@
                                 <source src="" type="">
                             </picture>
                             <img src="assets/imgs/portfolio/dummy.jpg" alt="">
-                        </div>
+                        </div> -->
+                    
                     </div>
                 </div>
-                <div class="value-contact" id="works">
-                    <button class="btn btn-primary">
-                        <a href="#">
-                            Get in Touch
-                        </a>
-                    </button>
+                <div class="value-contact">
+                    <button class="btn btn-primary">Get in Touch</button>
                 </div>
             </div>
 
             <div class="wraper" style="padding-top:9.6rem">
                 <div class="grid grid--3-cols no-gap">
                     <div class="value">
-                        <h3 class="heading-sixth">
-                            <a href="#">
-                                RESPONSABILIDADE SOCIAL
-                            </a>
-                        </h3>
+                        <h3 class="heading-sixth">RESPONSABILIDADE SOCIAL</h3>
                         <!-- <p class="text-description">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat at enim ullam consequatur, illum optio. Quibusdam adipisci animi neque quasi unde distinctio, dicta vitae id quaerat, dolorum aspernatur repudiandae repellat.
                         </p> -->
                     </div>
                     <div class="value">
-                        <h3 class="heading-sixth">
-                            <a href="#">
-                                PORTFÓLIO
-                            </a>
-                        </h3>
+                        <h3 class="heading-sixth">PORTFÓLIO</h3>
                         <!-- <p class="text-description">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat at enim ullam consequatur, illum optio. Quibusdam adipisci animi neque quasi unde distinctio, dicta vitae id quaerat, dolorum aspernatur repudiandae repellat.
                         </p> -->
                     </div>
                     <div class="value">
-                        <h3 class="heading-sixth">
-                            <a href="#">
-                                PARCEIROS
-                            </a>
-                        </h3>
+                        <h3 class="heading-sixth">PARCEIROS</h3>
                         <!-- <p class="text-description">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat at enim ullam consequatur, illum optio. Quibusdam adipisci animi neque quasi unde distinctio, dicta vitae id quaerat, dolorum aspernatur repudiandae repellat.
                         </p> -->
@@ -569,7 +720,7 @@
         </section>
         -->
 
-        <section class="contacts-section" id="contact">
+        <section class="contacts-section reveal" id="contact">
             <div class="wraper">
                 <h3 class="heading-terteary">
                     Quer contratar os nossos serviços <span>?</span>
@@ -669,5 +820,21 @@
     <!-- importing scripts -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/added_js.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script>
+        var h1_title = document.getElementsByClassName("autoWrite-h1")[0];
+        var title = new Typed(h1_title , {
+            strings: ["A Chitara Sound, Lda ^6000", "Os melhores no Mercado!", "Contrate-nos! ^3000"],
+            typeSpeed : 80,
+            backSpeed : 30,
+            loop : true
+        });
+        var title_p = new Typed(".autoWrite-p",{
+            strings: [' ^2100 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum deserunt sint doloremque saepe nemo corporis quam inventore eligendi numquam aliquid optio facere doloribus dolores odit sit, reprehenderit quod maxime animi.'],
+            typeSpeed: 20,    
+            loop : false
+        });
+    </script>
 </body>
 </html>
